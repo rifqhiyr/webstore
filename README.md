@@ -29,4 +29,6 @@ $ yarn start
 
 4. Must use pure css
 
-5. I put the design in src/design
+5. I put the design in src/assets/design
+
+6. Development process will use git flow, you should work in your own branch and create a merge request to staging branch (develop)
