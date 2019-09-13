@@ -27,8 +27,8 @@ $ yarn start
 
 3. Your component must have unit testing, at least rdd
 
-4. Must use pure css
+4. Styling using css-preprocessor and create style in separate file, css framework is not allowed
 
-5. I put the design in src/assets/design
+5. You can see the web design image in src/assets/design
 
 6. Development process will use git flow, you should work in your own branch and create a merge request to staging branch (develop)
