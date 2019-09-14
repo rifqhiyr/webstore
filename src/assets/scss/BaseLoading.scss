@@ -1,0 +1,12 @@
+@import "./variables";
+
+.button-primary {
+  height: 3rem;
+  width: 7rem;
+  border-radius: 4px;
+  background-image: linear-gradient(
+    to bottom left,
+    $color-primary,
+    $color-secondary-2
+  );
+}
