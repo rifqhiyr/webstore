@@ -6,6 +6,9 @@ const BaseLoading = props => {
 
   const hadleLoad = e => {
     setLoad(!load);
+    setTimeout(() => {
+      setLoad(load);
+    }, 3000);
   };
 
   return (
