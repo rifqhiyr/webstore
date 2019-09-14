@@ -4,7 +4,7 @@ import "../assets/scss/BaseLoading.scss";
 const BaseLoading = props => {
   const [load, setLoad] = useState(false);
 
-  const hadleLoad = e => {
+  const handleLoad = e => {
     setLoad(!load);
     setTimeout(() => {
       setLoad(load);
@@ -12,7 +12,7 @@ const BaseLoading = props => {
   };
 
   return (
-    <button onClick={hadleLoad} className="button-primary">
+    <button onClick={handleLoad} className="button-primary">
       {load ? (
         <span>
           <i className="fa fa-circle-o-notch fa-spin" /> loading...
