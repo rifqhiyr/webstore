@@ -4,9 +4,10 @@
   height: 3rem;
   width: 7rem;
   border-radius: 4px;
-  background-image: linear-gradient(
-    to bottom left,
-    $color-primary,
-    $color-secondary-2
-  );
+  background-color: $color-dark-5;
+  border: 1px solid $color-primary;
+  color: $color-primary;
+  &:focus {
+    outline: none;
+  }
 }
