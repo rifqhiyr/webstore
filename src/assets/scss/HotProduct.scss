@@ -30,6 +30,11 @@ h5 {
   font-size: 12px;
 }
 
+.buttwrap {
+  display: flex;
+  justify-content: center;
+}
+
 .price {
   font-size: 15px;
   color: $color-dark-2;
