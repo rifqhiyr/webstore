@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import "./App.css";
-import BaseLoading from "./components/BaseLoading";
-import Footer from "./components/Footer";
-
-function App() {
-  return (
-    <div className="App">
-      <h1>store</h1>
-      <BaseLoading />
-      <Footer />
-    </div>
-  );
-=======
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import HomePage from "./components/views/HomePage";
@@ -31,7 +16,6 @@ class App extends Component {
       </Router>
     );
   }
->>>>>>> 0cd2984b129e76718209eda6247b67717aa3f4ac
 }
 
 export default App;
