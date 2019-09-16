@@ -1,0 +1,13 @@
+.button-primary {
+  height: 3rem;
+  width: 7rem;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: 1px solid #f62f5e;
+  color: #f62f5e;
+}
+
+.button-primary:focus {
+  outline: none;
+}
+/*# sourceMappingURL=BaseLoading.css.map */

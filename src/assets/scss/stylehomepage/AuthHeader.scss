@@ -1,1 +1,84 @@
 @import "../variables";
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+div.container {
+  background-color: $color-dark-4;
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  .nav-1 {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 50px;
+  }
+
+  .nav-1 span {
+    color: $color-primary;
+    margin: 5px;
+  }
+
+  .nav-li {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    margin-left: -21em;
+  }
+
+  .nav-li li {
+    list-style: none;
+    text-decoration: none;
+    color: $color-dark-1;
+  }
+
+
+  .nav-2 {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  .nav-2 li {
+    padding :5px 25px;
+  }
+
+  .nav-icon {
+    font-size: 1rem;
+  }
+  .cart-btn {
+    position: relative;
+    cursor: pointer;
+  }
+  .cart-items {
+    position: absolute;
+    // top: -8px;
+    right: -15px;
+    background: $color-primary;
+    padding: 0 5px;
+    border-radius: 30%;
+    color: $color-dark-5;
+  }
+
+}
