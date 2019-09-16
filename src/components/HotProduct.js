@@ -49,6 +49,9 @@ export default class HotProduct extends Component {
             </div>
           </div>
         </div>
+        <div className="pad">
+          <hr></hr>
+        </div>
       </div>
     );
   }

@@ -51,6 +51,9 @@ export default class FormReview extends Component {
             </div>
           </form>
         </div>
+        <div className="pad">
+          <hr></hr>
+        </div>
       </div>
     );
   }
