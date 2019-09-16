@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAIA,AAAA,GAAG,AAAA,YAAY,CAAC;EACd,gBAAgB,EAAE,8BAA8B;EAChD,MAAM,EAAE,KAAK;EACb,MAAM,EAAG,IAAI;EACb,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,KAAK;EACtB,mBAAmB,EAAE,MAAM;EAC3B,OAAO,EAAE,EAAE;EACX,KAAK,ECAQ,OAAO;CDCrB",
     "sources": [
-        "Hero.scss"
+        "Hero.scss",
+        "../_variables.scss"
     ],
     "names": [],
     "file": "Hero.css"

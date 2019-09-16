@@ -6,6 +6,8 @@ import Footer from "../Footer"
 import AuthHeader from "../homepage/AuthHeader"
 import Header from "../homepage/Header"
 import Jumbotron from "../homepage/Jumbotron"
+import Card from "../../components/homepage/Card"
+import Hero from "../../components/homepage/Hero"
 
 export default class HomePage extends Component {
   state = {
@@ -21,6 +23,8 @@ export default class HomePage extends Component {
         <AuthHeader backColorFooter={this.state.backColorHeader}/>
         <Header backColorHeaderPage={this.state.backColorHeaderPage}/>
         <Jumbotron/>
+        <Card/>
+        <Hero/>
         <Footer backColorFooter={this.state.backColorFooter} />
       </div>
     );

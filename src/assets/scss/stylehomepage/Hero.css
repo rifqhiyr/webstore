@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=Hero.css.map */
+div.h-container {
+  background-image: url("../../images/hero1.jpeg");
+  height: 453px;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  color: #ffffff;
+}
+/*# sourceMappingURL=Hero.css.map */
