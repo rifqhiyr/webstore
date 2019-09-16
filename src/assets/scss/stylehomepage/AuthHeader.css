@@ -12,6 +12,7 @@ html {
 
 div.container {
   background-color: #ffffff;
+  padding: 0px 30px;
 }
 
 div.container .authHeader--dark nav {
@@ -40,7 +41,6 @@ div.container .authHeader--dark .nav-1 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style: none;
-  padding-left: 50px;
 }
 
 div.container .authHeader--dark .nav-1 span {
@@ -74,7 +74,7 @@ div.container .authHeader--dark .nav-2 {
 }
 
 div.container .authHeader--dark .nav-2 li {
-  padding: 5px 50px;
+  padding: 5px 0px 5px 25px;
 }
 
 div.container .authHeader--dark .nav-icon {
@@ -97,6 +97,7 @@ div.container .authHeader--dark .cart-items {
 
 div.container .authHeader--light {
   background-color: #f7f7f7;
+  padding: 0px 30px;
 }
 
 div.container .authHeader--light nav {
@@ -125,7 +126,6 @@ div.container .authHeader--light .nav-1 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style: none;
-  padding-left: 50px;
 }
 
 div.container .authHeader--light .nav-1 span {

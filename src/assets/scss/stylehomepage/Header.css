@@ -1,1 +1,113 @@
-/* No CSS *//*# sourceMappingURL=Header.css.map */
+div.head-1 {
+  background-color: #2e2e2e;
+  padding: 0px 30px;
+}
+
+div.head-1 .header--dark nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 12vh;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+div.head-1 .header--dark .h-logo {
+  color: #f62f5e;
+  font-size: 20px;
+}
+
+div.head-1 .header--dark .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 20%;
+  margin-left: -17em;
+  list-style: none;
+}
+
+div.head-1 .header--dark .nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+div.head-1 .header--dark .finding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.head-1 .header--dark .finding .icon-search {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+div.head-1 .header--dark .finding input {
+  background-color: #6c6c6c;
+  border: none;
+  width: 80%;
+  height: 2.2em;
+  margin: 0px 5px;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-size: 14px;
+  outline: none;
+  color: white;
+}
+
+div.head-1 .header--dark .finding input::-webkit-input-placeholder {
+  color: #ffffff;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+div.head-1 .header--dark .finding input:-ms-input-placeholder {
+  color: #ffffff;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+div.head-1 .header--dark .finding input::-ms-input-placeholder {
+  color: #ffffff;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+div.head-1 .header--dark .finding input::placeholder {
+  color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.head-1 .header--dark .nav-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+div.head-1 .header--dark .cart-btn {
+  position: relative;
+  cursor: pointer;
+}
+
+div.head-1 .header--dark .cart-items {
+  position: absolute;
+  right: -15px;
+  background: #ffffff;
+  padding: 0 5px;
+  border-radius: 30%;
+  color: #f62f5e;
+}
+/*# sourceMappingURL=Header.css.map */

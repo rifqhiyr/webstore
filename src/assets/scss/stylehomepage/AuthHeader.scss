@@ -15,10 +15,9 @@ html {
 
 div.container {
   background-color: $color-dark-5;
+  padding: 0px 30px;
 
   .authHeader--dark {
-
-
 
     nav {
       display: flex;
@@ -37,7 +36,7 @@ div.container {
       display: flex;
       justify-content: space-around;
       list-style: none;
-      padding-left: 50px;
+      // padding-left: 50px;
     }
 
     .nav-1 span {
@@ -66,7 +65,7 @@ div.container {
     }
 
     .nav-2 li {
-      padding: 5px 50px;
+      padding: 5px 0px 5px 25px;
     }
 
     .nav-icon {
@@ -94,6 +93,7 @@ div.container {
 div.container {
   .authHeader--light {
     background-color: $color-dark-4;
+    padding: 0px 30px;
 
     nav {
       display: flex;
@@ -112,7 +112,7 @@ div.container {
       display: flex;
       justify-content: space-around;
       list-style: none;
-      padding-left: 50px;
+      // padding-left: 50px;
     }
 
     .nav-1 span {
@@ -164,3 +164,5 @@ div.container {
     }
   }
 }
+
+
