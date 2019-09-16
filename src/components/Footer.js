@@ -2,13 +2,10 @@ import React, { Component } from "react";
 import "../assets/scss/Footer.scss";
 
 class Footer extends Component {
-  state = {
-    warna: true
-  }
   render() {
     return (
       <div className="footer">
-        <div className={this.state.warna?"footer--dark":"footer--light"}>
+        <div className={this.props.backColorFooter?"footer--dark":"footer--light"}>
           <ul className="footer--link">
             <li><a href="">Women</a></li>
             <li><a href="">Men</a></li>
