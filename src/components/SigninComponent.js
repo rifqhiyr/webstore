@@ -11,13 +11,13 @@ class SigninComponent extends Component {
             <input type="email" placeholder="email" />
             <input type="password" placeholder="password" />
             <p>
-              <input type="checkbox" />
-              Remember
+              <input type="checkbox" /> Remember
             </p>
+
             <button>Sign in</button>
-            <p>
-              <a href="">forgot password</a>
-              <a href="">Have an account</a>
+            <p className="message">
+              <a href="/">forgot password</a>
+              <a href="/">Have an account</a>
             </p>
           </form>
         </div>
