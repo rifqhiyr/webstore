@@ -4,8 +4,8 @@ import HomePage from "./components/views/HomePage";
 import LoginPage from "./components/views/LoginPage";
 import RegisterPage from "./components/views/RegisterPage";
 import DetailPage from "./components/views/DetailPage";
-import ConfirmationPage from "./components/views/checkout/ConfirmationPage";
-import PaymentPage from "./components/views/checkout/PaymentPage";
+import ConfirmationPage from "./components/ConfirmationPage";
+import PaymentPage from "./components/PaymentPage";
 
 class App extends Component {
   render() {
