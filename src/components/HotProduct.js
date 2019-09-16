@@ -13,7 +13,7 @@ export default class HotProduct extends Component {
             <h5>New look T-Shirt In Gradient Fade</h5>
             <p className="price">Rp 140.000</p>
             <div className="buttwrap">
-              <button className="butt">Submit</button>
+              <button className="butt">Buy now</button>
             </div>
           </div>
           <div className="flex">
@@ -21,7 +21,7 @@ export default class HotProduct extends Component {
             <h5>New look T-Shirt In Gradient Fade</h5>
             <p className="price">Rp 140.000</p>
             <div className="buttwrap">
-              <button className="butt">Submit</button>
+              <button className="butt">Buy now</button>
             </div>
           </div>
           <div className="flex">
@@ -29,7 +29,7 @@ export default class HotProduct extends Component {
             <h5>New look T-Shirt In Gradient Fade</h5>
             <p className="price">Rp 140.000</p>
             <div className="buttwrap">
-              <button className="butt">Submit</button>
+              <button className="butt">Buy now</button>
             </div>
           </div>
           <div className="flex">
@@ -37,7 +37,7 @@ export default class HotProduct extends Component {
             <h5>New look T-Shirt In Gradient Fade</h5>
             <p className="price">Rp 140.000</p>
             <div className="buttwrap">
-              <button className="butt">Submit</button>
+              <button className="butt">Buy now</button>
             </div>
           </div>
           <div className="flex">
@@ -45,7 +45,7 @@ export default class HotProduct extends Component {
             <h5>New look T-Shirt In Gradient Fade</h5>
             <p className="price">Rp 140.000</p>
             <div className="buttwrap">
-              <button className="butt">Submit</button>
+              <button className="butt">Buy now</button>
             </div>
           </div>
         </div>
