@@ -14,11 +14,11 @@ export default class ProductReview extends Component {
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
             <h3>Pablo Permins</h3>
-            <p className="smallFont">one hour ago</p>
+            <p className="small-font">one hour ago</p>
           </div>
 
           <div className="main">
-            <p className="mediumFont">
+            <p className="medium-font">
               Got this the post the other day and right from opening the packet
               I knew this was quality, put it on and I was right!! Well done
             </p>

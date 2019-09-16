@@ -13,7 +13,7 @@ export default class FormReview extends Component {
                 <label>Choose a nickname</label>
               </div>
               <div className="col-70">
-                <input type="text" name="nickname" />
+                <input type="text" className="input" name="nickname" />
               </div>
             </div>
             <div className="row">
@@ -21,7 +21,11 @@ export default class FormReview extends Component {
                 <label>Your Review</label>
               </div>
               <div className="col-70">
-                <textarea name="review" defaultValue={""} />
+                <textarea
+                  name="review"
+                  defaultValue={""}
+                  className="text-area"
+                />
                 <p className="smallFont">
                   Your review must be at least 50 characters
                 </p>

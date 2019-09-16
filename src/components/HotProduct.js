@@ -9,10 +9,10 @@ export default class HotProduct extends Component {
       return (
         <div className="flex">
           <img src={data.img} alt="Product1" />
-          <h5>{data.title}</h5>
+          <h5 className="h5">{data.title}</h5>
           <p className="price">Rp {data.price}</p>
           <div className="button-wrap">
-            <button className="button">Buy now</button>
+            <button className="button-hot">Buy now</button>
           </div>
         </div>
       );
