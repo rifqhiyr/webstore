@@ -5,7 +5,51 @@ div.h-container {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  z-index: -1;
+  z-index: -5;
   color: #ffffff;
+}
+
+div.h-container .h-color {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 130px 100px;
+  z-index: -1;
+}
+
+div.h-container h1 {
+  font-size: 64px;
+}
+
+div.h-container p {
+  font-size: 32px;
+}
+
+div.h-container a {
+  text-decoration: none;
+  color: #f62f5e;
+}
+
+div.h-container .h-link {
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin-right: 85%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+div.h-container .h-link:hover {
+  background-color: #f62f5e;
+}
+
+div.h-container .h-link p:hover {
+  color: #ffffff;
+}
+
+div.h-container .h-link p {
+  font-size: 21px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=Hero.css.map */
