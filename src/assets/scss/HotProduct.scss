@@ -1,1 +1,30 @@
 @import "./variables";
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.flex {
+  flex: 0 0 10%;
+  margin: 10px;
+  background-color: $color-dark-5;
+  border: 1px solid $color-dark-3;
+}
+
+h5 {
+  text-align: center;
+  margin: 20px;
+}
+
+.butt {
+  color: $color-dark-5;
+  background-color: $color-primary;
+  padding: 10px 18px;
+  margin: 0px 20px 20px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
