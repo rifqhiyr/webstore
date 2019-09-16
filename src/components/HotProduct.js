@@ -5,12 +5,12 @@ import DataHot from "./../assets/data/HotData";
 
 export default class HotProduct extends Component {
   render() {
-    const ListData = DataHot.map(IsiData => {
+    const dataList = DataHot.map(data => {
       return (
         <div className="flex">
-          <img src={IsiData.img} alt="Product1" />
-          <h5>{IsiData.title}</h5>
-          <p className="price">Rp {IsiData.price}</p>
+          <img src={data.img} alt="Product1" />
+          <h5>{data.title}</h5>
+          <p className="price">Rp {data.price}</p>
           <div className="button-wrap">
             <button className="button">Buy now</button>
           </div>
@@ -20,7 +20,7 @@ export default class HotProduct extends Component {
     return (
       <div>
         <h2 className="padding">You may also like</h2>
-        <div className="wrap">{ListData}</div>
+        <div className="wrap">{dataList}</div>
       </div>
     );
   }
