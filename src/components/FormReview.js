@@ -26,6 +26,9 @@ export default class FormReview extends Component {
                   style={{ height: "200px" }}
                   defaultValue={""}
                 />
+                <p className="smallFont">
+                  Your review must be at least 50 characters
+                </p>
               </div>
             </div>
             <div className="row">
