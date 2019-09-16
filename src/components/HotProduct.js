@@ -26,6 +26,18 @@ export default class HotProduct extends Component {
             <p className="price">Rp 140.000</p>
             <button className="butt">Submit</button>
           </div>
+          <div className="flex">
+            <img src={Product1} alt="Product1" />
+            <h5>New look T-Shirt In Gradient Fade</h5>
+            <p className="price">Rp 140.000</p>
+            <button className="butt">Submit</button>
+          </div>
+          <div className="flex">
+            <img src={Product1} alt="Product1" />
+            <h5>New look T-Shirt In Gradient Fade</h5>
+            <p className="price">Rp 140.000</p>
+            <button className="butt">Submit</button>
+          </div>
         </div>
       </div>
     );
