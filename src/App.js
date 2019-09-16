@@ -1,23 +1,21 @@
-import React from "react";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
-import "./App.css";
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import HomePage from "./components/views/HomePage";
+import LoginPage from "./components/views/LoginPage";
+import RegisterPage from "./components/views/RegisterPage";
+import DetailPage from "./components/views/DetailPage";
 
-// Import Component (Dont Forget to delete in production)
-import BaseLoading from "./components/BaseLoading";
-import HomePage from "./pages/HomePage"
-
-function App() {
-  return (
-    <Router>
-    <div className="App">
-      <Switch>
-      <h1>store</h1>
-      <Route path="/" exact component={BaseLoading}/> 
-      <Route path="/home" exact component={HomePage}/>
-      </Switch>
-    </div>
-    </Router>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/login" exact component={LoginPage} />
+        <Route path="/register" exact component={RegisterPage} />
+        <Route path="/detail" exact component={DetailPage} />
+      </Router>
+    );
+  }
 }
 
 export default App;
