@@ -6,15 +6,15 @@ class SigninComponent extends Component {
     return (
       <div className="login-page">
         <div className="form">
-          <h1>sign in</h1>
+          <h1>Sign In</h1>
           <form className="login-form">
             <input type="email" placeholder="email" />
             <input type="password" placeholder="password" />
-            <p>
-              <input type="checkbox" /> Remember
-            </p>
+            <div className="check">
+              <input type="checkbox" /> Remember me
+            </div>
 
-            <button>Sign in</button>
+            <button>Sign In</button>
             <p className="message">
               <a href="/">forgot password</a>
               <a href="/">Have an account</a>

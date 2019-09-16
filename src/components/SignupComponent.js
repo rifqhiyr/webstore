@@ -6,11 +6,11 @@ class SignupComponent extends Component {
     return (
       <div className="signup-page">
         <div className="form">
-          <h1>sign Up</h1>
+          <h1>Sign Up</h1>
           <form className="signup-form">
+            <input type="text" placeholder="Username" />
             <input type="email" placeholder="email" />
             <input type="password" placeholder="password" />
-            <input type="password" placeholder="Re-type password" />
             <button>Sign up</button>
 
             <p class="message">

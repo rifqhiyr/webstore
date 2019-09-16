@@ -1,38 +1,28 @@
+@import "./variables";
 .signup-page {
   width: 400px;
   padding: 10% 0 0;
   margin: auto;
   .form {
     position: relative;
-    background: #f7f7f7;
+    background: $color-dark-5;
     max-width: 400px;
     margin: 0 auto 100px;
     padding: 15px;
     text-align: center;
-
+    border: 0px solid;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px $color-dark-4;
     .signup-form {
       padding-top: 30px;
-      input[type="email"] {
+      input {
         font-family: "roboto", sans-serif;
         outline: 1;
-        background: white;
+        background: $color-dark-5;
         border-radius: 5px;
         width: 100%;
-        border: 1px solid #b4b4b4;
-        margin: 0 0 15px;
-        padding: 15px;
-        box-sizing: border-box;
-        font-size: 18px;
-        text-align: center;
-      }
-
-      input[type="password"] {
-        font-family: "roboto", sans-serif;
-        outline: 1;
-        background: white;
-        border-radius: 5px;
-        width: 100%;
-        border: 1px solid #b4b4b4;
+        border: 1px solid $color-dark-3;
         margin: 0 0 15px;
         padding: 15px;
         box-sizing: border-box;
@@ -43,30 +33,32 @@
       p {
         display: flex;
         justify-content: center;
-        color: #b4b4b4;
+        color: $color-dark-3;
         font-weight: bold;
       }
 
       button {
         font-family: "roboto", sans-serif;
         text-transform: uppercase;
-        background: #f62f5e;
-        border: 1px solid #b4b4b4;
+        background: $color-primary;
+        border: 1px solid $color-dark-3;
         margin-top: 30px;
         width: 50%;
         font-size: 14px;
+        font-weight: bold;
         padding: 15px;
         border-radius: 25px;
-        color: #ffffff;
+        color: $color-dark-5;
         cursor: pointer;
       }
 
       p.message {
         display: flow-root;
         a {
-          color: #f62f5e;
+          color: $color-primary;
           text-decoration: none;
           margin-top: 30px;
+          font-weight: 500;
         }
       }
     }
