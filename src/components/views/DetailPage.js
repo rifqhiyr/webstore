@@ -11,13 +11,14 @@ import "../../assets/scss/stylehomepage/Header.css"
 class DetailPage extends Component {
   state = {
     backColorHeader : false,
-    backColorHeaderPage : false
+    backColorHeaderPage : false,
+    
   }
   render() {
     return (
       <div>
         <AuthHeader backColorHeader={this.state.backColorHeader}/>
-        <Header/>
+        <Header backColorHeaderPage={this.state.backColorHeaderPage}/>
       </div>
     );
   }

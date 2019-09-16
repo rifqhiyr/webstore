@@ -74,7 +74,7 @@ div.container .authHeader--dark .nav-2 {
 }
 
 div.container .authHeader--dark .nav-2 li {
-  padding: 5px 0px 5px 25px;
+  padding: 5px 5px 5px 25px;
 }
 
 div.container .authHeader--dark .nav-icon {
@@ -95,7 +95,7 @@ div.container .authHeader--dark .cart-items {
   color: #ffffff;
 }
 
-div.container .authHeader--light {
+div.container {
   background-color: #f7f7f7;
   padding: 0px 30px;
 }

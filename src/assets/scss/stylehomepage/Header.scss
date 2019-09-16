@@ -2,11 +2,9 @@
 
 
 div.head-1 {
-  background-color: $color-dark-1;
-  padding: 0px 30px;
-
   .header--dark {
-    
+    background-color: $color-dark-1;
+    padding: 0px 30px;
     nav {
       display: flex;
       justify-content: space-between;
@@ -22,10 +20,11 @@ div.head-1 {
     }
 
     .nav-links {
+      position: absolute;
       display: flex;
       justify-content: space-around;
       width: 20%;
-      margin-left: -17em;
+      margin-left: 20em;
       list-style: none;
     }
 
@@ -36,6 +35,92 @@ div.head-1 {
 
     .finding {
       display: flex;
+    }
+
+    .finding .icon-search {
+      font-size: 25px;
+      color: $color-dark-5;
+    }
+
+    .finding input {
+      background-color: $color-dark-2;
+      border : none;
+      width: 80%;
+      height: 2.2em;
+      margin: 0px 5px;
+      padding: 10px 15px;
+      border-radius: 30px;
+      font-size: 14px;
+      outline: none;
+      color: white;
+    }
+
+    .finding input::placeholder{
+      color: $color-dark-5;
+      align-items: center;
+    }
+
+    .nav-2 {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+    }
+
+    .cart-btn {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .cart-items {
+      position: absolute;
+      // top: -8px;
+      right: -15px;
+      background: $color-dark-5;
+      padding: 0 5px;
+      border-radius: 30%;
+      color: $color-primary;
+    }
+
+  }
+}
+
+
+
+div.head-1 {
+  .header--light {
+    background-color: $color-dark-5;
+    padding: 0px 30px;
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 12vh;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .h-logo {
+      color: $color-primary;
+      font-size: 20px;
+    }
+
+    .nav-links {
+      display: none;
+      justify-content: space-around;
+      width: 20%;
+      margin-left: -17em;
+      list-style: none;
+    }
+
+    .nav-links a{
+      text-decoration: none;
+      color : $color-dark-1;
+    }
+
+    .finding {
+      display: flex;
+      display: none;
     }
 
     .finding .icon-search {

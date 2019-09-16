@@ -65,7 +65,7 @@ div.container {
     }
 
     .nav-2 li {
-      padding: 5px 0px 5px 25px;
+      padding: 5px 5px 5px 25px;
     }
 
     .nav-icon {
@@ -91,9 +91,10 @@ div.container {
 
 
 div.container {
+  background-color: $color-dark-4;
+  padding: 0px 30px;
+  
   .authHeader--light {
-    background-color: $color-dark-4;
-    padding: 0px 30px;
 
     nav {
       display: flex;

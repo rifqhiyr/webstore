@@ -7,6 +7,10 @@ import "../../assets/scss/stylehomepage/Header.css"
 
 
 class Header extends Component {
+  state = {
+    // Menggunakan false conditional state di Header tidak dapat berubah namun false merubah ke duanya antara homepage dan detail
+    withMenu : true,
+  }
   render() {
     return (
       <div className="head-1">
@@ -33,6 +37,60 @@ class Header extends Component {
             </Link>
           </ul>
           <form className="finding">
+          <label for="search-box">
+          <span className="fa fa-search fa-flip-horizontal fa-2x icon-search"></span>        
+          </label>
+          <input 
+            type="search" 
+            placeholder="search anything"
+            className="box-search"
+            />
+        <div className="nav-2">
+          <img src={White} alt="shopping-cart" width="25px"/>
+          <div className="cart-btn">
+          <span className="nav-icon"></span>
+          <div className="cart-items">0</div>
+          </div>
+          </div>
+        </form>
+        </nav>
+        </div>
+      </div>
+    )
+  }
+}
+
+
+
+export default Header
+
+
+
+/*
+    {this.state.withMenu ? (
+            <div className="header--dark">
+          
+            </div>
+          ) : (
+            <div className="header--light">
+            <ul className="nav-links">
+              <Link to="#">
+                <li>Women</li>
+              </Link>
+              <Link to="#">
+                <li>Men</li>
+              </Link>
+              <Link to ="#">
+                <li>Kids</li>
+              </Link>
+              <Link to ="#">
+              <li>Shoes</li>
+              </Link>
+              <Link to ="#">
+                <li>Brands</li>
+              </Link>
+            </ul>
+            <form className="finding">
             <label for="search-box">
             <span className="fa fa-search fa-flip-horizontal fa-2x icon-search"></span>        
             </label>
@@ -49,11 +107,8 @@ class Header extends Component {
             </div>
             </div>
           </form>
-        </nav>
-        </div>
-      </div>
-    )
-  }
-}
+          </div>
+          )}
+*/ 
 
-export default Header
+

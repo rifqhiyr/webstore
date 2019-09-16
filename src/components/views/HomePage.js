@@ -7,7 +7,7 @@ import Header from "../homepage/Header"
 export default class HomePage extends Component {
   state = {
     backColorHeader : true,
-    backColorHeaderPage : true
+    backColorHeaderPage : true,
   }
   render() {
     return (
