@@ -5,7 +5,7 @@ export default class ProductReview extends Component {
   render() {
     return (
       <div>
-        <h2 className="pad">Product reviews</h2>
+        <h2 className="padding">Product reviews</h2>
         <div className="row">
           <div className="side">
             <span class="fa fa-star checked"></span>
@@ -26,9 +26,6 @@ export default class ProductReview extends Component {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <i class="fa fa-comment">&nbsp;&nbsp;</i>6
           </div>
-        </div>
-        <div className="pad">
-          <hr></hr>
         </div>
       </div>
     );

@@ -4,10 +4,6 @@ body {
   background-color: $color-dark-4;
 }
 
-.padd {
-  padding: 0px 50px 0px 50px;
-}
-
 .container {
   padding: 0 50px 50px 50px;
 }
@@ -38,16 +34,17 @@ button:hover {
   background-color: $color-dark-2;
 }
 
-input[type="text"] {
-  width: 40%;
+textarea {
+  width: 100%;
   padding: 12px;
+  height: 200px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
 }
 
-textarea {
-  width: 100%;
+input[type="text"] {
+  width: 40%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;

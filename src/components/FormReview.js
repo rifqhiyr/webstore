@@ -5,7 +5,7 @@ export default class FormReview extends Component {
   render() {
     return (
       <div>
-        <h2 className="padd">Add a review</h2>
+        <h2 className="padding">Add a review</h2>
         <div className="container">
           <form>
             <div className="row">
@@ -21,11 +21,7 @@ export default class FormReview extends Component {
                 <label>Your Review</label>
               </div>
               <div className="col-70">
-                <textarea
-                  name="review"
-                  style={{ height: "200px" }}
-                  defaultValue={""}
-                />
+                <textarea name="review" defaultValue={""} />
                 <p className="smallFont">
                   Your review must be at least 50 characters
                 </p>
@@ -50,9 +46,6 @@ export default class FormReview extends Component {
               </div>
             </div>
           </form>
-        </div>
-        <div className="pad">
-          <hr></hr>
         </div>
       </div>
     );
