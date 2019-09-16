@@ -1,0 +1,55 @@
+@import "./variables";
+
+div.h-container {
+  background-image: url("../images/hero1.jpeg");
+  height: 453px;
+  margin: 10px;
+  // padding: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -5;
+  color: $color-dark-5;
+
+  .h-color {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 130px 100px;
+    z-index: -1;
+  }
+
+  h1 {
+    font-size: 64px;
+  }
+
+  p {
+    font-size: 32px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-primary;
+  }
+
+  .h-link {
+    background-color: $color-dark-5;
+    margin-top: 20px;
+    margin-right: 85%;
+    align-items: center;
+    padding: 10px 0px;
+    border-radius: 30px;
+    text-align: center;
+  }
+
+  .h-link:hover {
+    background-color: $color-primary;
+  }
+
+  .h-link p:hover {
+    color: $color-dark-5;
+  }
+
+  .h-link p {
+    font-size: 21px;
+    font-weight: bold;
+  }
+}

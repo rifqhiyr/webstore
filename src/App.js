@@ -4,8 +4,7 @@ import HomePage from "./components/views/HomePage";
 import LoginPage from "./components/views/LoginPage";
 import RegisterPage from "./components/views/RegisterPage";
 import DetailPage from "./components/views/DetailPage";
-import ConfirmationPage from "./components/ConfirmationPage";
-import PaymentPage from "./components/PaymentPage";
+import CheckoutPage from "./components/views/CheckoutPage";
 
 class App extends Component {
   render() {
@@ -15,8 +14,7 @@ class App extends Component {
         <Route path="/login" exact component={LoginPage} />
         <Route path="/register" exact component={RegisterPage} />
         <Route path="/detail" exact component={DetailPage} />
-        <Route path="/checkout" exact component={ConfirmationPage} />
-        <Route path="/payment" exact component={PaymentPage} />
+        <Route path="/checkout" exact component={CheckoutPage} />
       </Router>
     );
   }
