@@ -1,24 +1,15 @@
 import React, { Component } from "react";
-
-// Import component (delete this in production)
-import AuthHeader from "../../components/homepage/AuthHeader.js" 
-import Header from "../../components/homepage/Header.js"
-
-// Import Style (Delete in this in production)
-import "../../assets/scss/stylehomepage/AuthHeader.css"
-import "../../assets/scss/stylehomepage/Header.css"
+import Footer from "../Footer";
 
 class DetailPage extends Component {
   state = {
-    backColorHeader : false,
-    backColorHeaderPage : false,
-    
+    backColorFooter: false
   }
   render() {
     return (
       <div>
-        <AuthHeader backColorHeader={this.state.backColorHeader}/>
-        <Header backColorHeaderPage={this.state.backColorHeaderPage}/>
+        <h1>detail page</h1>
+        <Footer backColorFooter={this.state.backColorFooter} />
       </div>
     );
   }
