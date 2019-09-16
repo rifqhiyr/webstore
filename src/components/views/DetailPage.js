@@ -1,10 +1,13 @@
 import React, { Component } from "react";
+import ProductReview from "./../ProductReview";
+import FormReview from "../FormReview";
 
 export default class DetailPage extends Component {
   render() {
     return (
       <div>
-        <h1>detail page</h1>
+        <ProductReview />
+        <FormReview />
       </div>
     );
   }

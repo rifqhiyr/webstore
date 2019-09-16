@@ -1,0 +1,48 @@
+@import "./variables";
+
+body {
+  background-color: $color-dark-4;
+}
+
+.pad {
+  padding: 0px 50px 0px 50px;
+}
+
+.container {
+  padding: 0 50px 50px 50px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 20px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 20px;
+}
+
+.button {
+  color: $color-dark-5;
+  background-color: $color-primary;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  float: left;
+}
+
+button:hover {
+  background-color: $color-dark-2;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
