@@ -11,10 +11,10 @@ html {
 }
 
 div.container {
-  background-color: #f7f7f7;
+  background-color: #ffffff;
 }
 
-div.container nav {
+div.container .authHeader--dark nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,16 +24,16 @@ div.container nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 7vh;
+  height: 8vh;
   font-size: 14px;
   font-weight: bold;
 }
 
-div.container nav a {
+div.container .authHeader--dark nav a {
   text-decoration: none;
 }
 
-div.container .nav-1 {
+div.container .authHeader--dark .nav-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,12 +43,12 @@ div.container .nav-1 {
   padding-left: 50px;
 }
 
-div.container .nav-1 span {
+div.container .authHeader--dark .nav-1 span {
   color: #f62f5e;
   margin: 5px;
 }
 
-div.container .nav-li {
+div.container .authHeader--dark .nav-li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,13 +58,13 @@ div.container .nav-li {
   margin-left: -21em;
 }
 
-div.container .nav-li li {
+div.container .authHeader--dark .nav-li li {
   list-style: none;
   text-decoration: none;
   color: #2e2e2e;
 }
 
-div.container .nav-2 {
+div.container .authHeader--dark .nav-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,20 +73,105 @@ div.container .nav-2 {
   list-style: none;
 }
 
-div.container .nav-2 li {
-  padding: 5px 25px;
+div.container .authHeader--dark .nav-2 li {
+  padding: 5px 50px;
 }
 
-div.container .nav-icon {
+div.container .authHeader--dark .nav-icon {
   font-size: 1rem;
 }
 
-div.container .cart-btn {
+div.container .authHeader--dark .cart-btn {
   position: relative;
   cursor: pointer;
 }
 
-div.container .cart-items {
+div.container .authHeader--dark .cart-items {
+  position: absolute;
+  right: -15px;
+  background: #f62f5e;
+  padding: 0 5px;
+  border-radius: 30%;
+  color: #ffffff;
+}
+
+div.container .authHeader--light {
+  background-color: #f7f7f7;
+}
+
+div.container .authHeader--light nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8vh;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+div.container .authHeader--light nav a {
+  text-decoration: none;
+}
+
+div.container .authHeader--light .nav-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  padding-left: 50px;
+}
+
+div.container .authHeader--light .nav-1 span {
+  color: #f62f5e;
+  margin: 5px;
+}
+
+div.container .authHeader--light .nav-li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 20%;
+  margin-left: -21em;
+}
+
+div.container .authHeader--light .nav-li li {
+  list-style: none;
+  text-decoration: none;
+  color: #2e2e2e;
+}
+
+div.container .authHeader--light .nav-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+div.container .authHeader--light .nav-2 li {
+  padding: 5px 50px;
+}
+
+div.container .authHeader--light .nav-icon {
+  font-size: 1rem;
+}
+
+div.container .authHeader--light .cart-btn {
+  position: relative;
+  cursor: pointer;
+}
+
+div.container .authHeader--light .cart-items {
   position: absolute;
   right: -15px;
   background: #f62f5e;

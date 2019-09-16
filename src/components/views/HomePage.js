@@ -5,10 +5,13 @@ import AuthHeader from "../homepage/AuthHeader"
 import Header from "../homepage/Header"
 
 export default class HomePage extends Component {
+  state = {
+    backColorHeader : true
+  }
   render() {
     return (
       <div>
-        <AuthHeader/>
+        <AuthHeader backColorHeader={this.state.backColorHeader}/>
         <Header/>
       </div>
     );

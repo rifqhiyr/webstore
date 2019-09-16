@@ -1,10 +1,19 @@
 import React, { Component } from 'react'
+import {Link} from "react-router-dom"
+
+// Import Style (Delete in this in production)
+import "../../assets/scss/stylehomepage/Header.css"
+
 
 class Header extends Component {
   render() {
     return (
       <div>
-        <h1>Hello Header</h1>
+        <nav className="h-container">
+          <div className="h-logo">
+            
+          </div>
+        </nav>
       </div>
     )
   }

@@ -11,6 +11,7 @@ class AuthHeader extends Component {
   render() {
     return (
       <div className="container">
+        <div className={this.props.backColorHeader?"authHeader--dark":"authHeader--light"}>
         <nav>
           <div className="nav-1">
             <li>Hi!  <Link to = "#"><span>Sign In</span></Link></li>
@@ -38,6 +39,7 @@ class AuthHeader extends Component {
             <li>Your bag : &#82;&#112;9999.99 </li>
             </div>
         </nav>
+        </div>
       </div>
     )
   }
