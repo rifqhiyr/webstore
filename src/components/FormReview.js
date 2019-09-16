@@ -5,22 +5,22 @@ export default class FormReview extends Component {
   render() {
     return (
       <div>
-        <h2 className="pad">Add a review</h2>
+        <h2 className="padd">Add a review</h2>
         <div className="container">
           <form>
             <div className="row">
-              <div className="col-25">
+              <div className="col-30">
                 <label>Choose a nickname</label>
               </div>
-              <div className="col-75">
+              <div className="col-70">
                 <input type="text" name="nickname" />
               </div>
             </div>
             <div className="row">
-              <div className="col-25">
+              <div className="col-30">
                 <label>Your Review</label>
               </div>
-              <div className="col-75">
+              <div className="col-70">
                 <textarea
                   name="review"
                   style={{ height: "200px" }}
@@ -32,10 +32,10 @@ export default class FormReview extends Component {
               </div>
             </div>
             <div className="row">
-              <div className="col-25">
+              <div className="col-30">
                 <label>Overall rating</label>
               </div>
-              <div className="col-75">
+              <div className="col-70">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -44,8 +44,8 @@ export default class FormReview extends Component {
               </div>
             </div>
             <div className="row">
-              <div className="col-25"></div>
-              <div className="col-75">
+              <div className="col-30"></div>
+              <div className="col-70">
                 <button className="button">Submit</button>
               </div>
             </div>
