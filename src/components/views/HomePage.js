@@ -39,9 +39,9 @@ export default class HomePage extends Component {
         <Jumbotron />
         <CardSidebar />
         <Card />
-        <div className="padding">
+        {/* <div className="padding">
           <div className="wrap margin-top">{dataList}</div>
-        </div>
+        </div> */}
         <Hero />
         <FormSubcribtion />
         <Footer backColorFooter={this.state.backColorFooter} />
