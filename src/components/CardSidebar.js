@@ -9,7 +9,7 @@ class CardSidebar extends Component {
           <div className="filter">
             <h4>Filter 386 Items</h4>
             <p>
-            <i class="fa fas fa-times"></i>
+              <i class="fa fas fa-times"></i>
               Gender : <span>Woman</span>
             </p>
             <p>
@@ -21,14 +21,46 @@ class CardSidebar extends Component {
             <div className="color--button">
               <h5>Color</h5>
               <div className="button__list">
-                <input name="button__color--list" type="button" className="color1" />
-                <input name="button__color--list" type="button" className="color2"/>
-                <input name="button__color--list" type="button" className="color3"/>
-                <input name="button__color--list" type="button" className="color4"/>
-                <input name="button__color--list" type="button" className="color5"/>
-                <input name="button__color--list" type="button" className="color6"/>
-                <input name="button__color--list" type="button" className="color7"/>
-                <input name="button__color--list" type="button" className="color8"/>
+                <input
+                  name="button__color--list"
+                  type="button"
+                  className="color1"
+                />
+                <input
+                  name="button__color--list"
+                  type="button"
+                  className="color2"
+                />
+                <input
+                  name="button__color--list"
+                  type="button"
+                  className="color3"
+                />
+                <input
+                  name="button__color--list"
+                  type="button"
+                  className="color4"
+                />
+                <input
+                  name="button__color--list"
+                  type="button"
+                  className="color5"
+                />
+                <input
+                  name="button__color--list"
+                  type="button"
+                  className="color6"
+                />
+                <input
+                  name="button__color--list"
+                  type="button"
+                  className="color7"
+                />
+                <input
+                  name="button__color--list"
+                  type="button"
+                  className="color8"
+                />
               </div>
             </div>
             <div className="size--button">
@@ -73,49 +105,51 @@ class CardSidebar extends Component {
           </div>
           <div className="button--filter">
             <button className="button__apply">Apply</button>
-            <button className="button__clear"><i class="fa fas fa-times"></i>Clear All</button>
+            <button className="button__clear">
+              <i class="fa fas fa-times"></i>Clear All
+            </button>
           </div>
         </div>
         <div className="cardlist">
           <div className="card--stuff">
-            <img src={require("../assets/images/afghan-flower.gif")} />
+            <img src={require("../assets/images/afghan-flower.gif")} alt="" />
             <h4>New Look T-Shirt In Gradient Fade</h4>
             <p>$14.99</p>
             <button>Buy Now</button>
           </div>
           <div className="card--stuff">
-            <img src={require("../assets/images/afghan-flower.gif")} />
+            <img src={require("../assets/images/afghan-flower.gif")} alt="" />
             <h4>New Look T-Shirt In Gradient Fade</h4>
             <p>$14.99</p>
             <button>Buy Now</button>
           </div>
           <div className="card--stuff">
-            <img src={require("../assets/images/afghan-flower.gif")} />
+            <img src={require("../assets/images/afghan-flower.gif")} alt="" />
             <h4>New Look T-Shirt In Gradient Fade</h4>
             <p>$14.99</p>
             <button>Buy Now</button>
           </div>
           <div className="card--stuff">
-            <img src={require("../assets/images/afghan-flower.gif")} />
+            <img src={require("../assets/images/afghan-flower.gif")} alt="" />
             <h4>New Look T-Shirt In Gradient Fade</h4>
             <p>$14.99</p>
             <button>Buy Now</button>
           </div>
           <div className="card--stuff">
-            <img src={require("../assets/images/afghan-flower.gif")} />
+            <img src={require("../assets/images/afghan-flower.gif")} alt="" />
             <h4>New Look T-Shirt In Gradient Fade</h4>
             <p>$14.99</p>
             <button>Buy Now</button>
           </div>
           <div className="card--stuff">
-            <img src={require("../assets/images/afghan-flower.gif")} />
+            <img src={require("../assets/images/afghan-flower.gif")} alt="" />
             <h4>New Look T-Shirt In Gradient Fade</h4>
             <p>$14.99</p>
             <button>Buy Now</button>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
