@@ -5,6 +5,7 @@ import HotProduct from "../HotProduct";
 import Footer from "../Footer";
 import AuthHeader from "../../components/AuthHeader.js";
 import Header from "../../components/Header";
+import ProductDetail from "../ProductDetail";
 
 class DetailPage extends Component {
   state = {
@@ -17,6 +18,7 @@ class DetailPage extends Component {
       <div>
         <AuthHeader backColorHeader={this.state.backColorHeader} />
         <Header backColorHeaderPage={this.state.backColorHeaderPage} />
+        <ProductDetail />
         <ProductReview />
         <FormReview />
         <HotProduct />
