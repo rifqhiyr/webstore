@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../assets/scss/checkout.scss";
+import "../assets/scss/ConfirmationPage.scss";
 
 class ConfirmationPage extends Component {
   render() {

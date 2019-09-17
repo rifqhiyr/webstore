@@ -5,6 +5,7 @@ import LoginPage from "./components/views/LoginPage";
 import RegisterPage from "./components/views/RegisterPage";
 import DetailPage from "./components/views/DetailPage";
 import CheckoutPage from "./components/views/CheckoutPage";
+import CardPage from "./components/views/CartPage";
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <Route path="/login" exact component={LoginPage} />
         <Route path="/register" exact component={RegisterPage} />
         <Route path="/detail" exact component={DetailPage} />
+        <Route path="/cart" exact component={CardPage} />
         <Route path="/checkout" exact component={CheckoutPage} />
       </Router>
     );
