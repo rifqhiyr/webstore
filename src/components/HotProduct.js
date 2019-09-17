@@ -7,10 +7,10 @@ export default class HotProduct extends Component {
   render() {
     const dataList = DataHot.map(data => {
       return (
-        <div className="flex">
+        <div className="content">
           <img src={data.img} alt="Product1" />
-          <h5 className="h5">{data.title}</h5>
-          <p className="price">Rp {data.price}</p>
+          <div className="h5">{data.title}</div>
+          <div className="price">Rp {data.price} ,00</div>
           <div className="button-wrap">
             <button className="button-hot">Buy now</button>
           </div>
@@ -18,9 +18,9 @@ export default class HotProduct extends Component {
       );
     });
     return (
-      <div>
-        <h2 className="padding">You may also like</h2>
-        <div className="wrap">{dataList}</div>
+      <div className="padding">
+        <h2>You may also like</h2>
+        <div className="wrap margin-top">{dataList}</div>
       </div>
     );
   }

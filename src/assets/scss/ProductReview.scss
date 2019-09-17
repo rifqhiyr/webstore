@@ -16,23 +16,40 @@
 .medium-font {
   color: $color-dark-2;
   font-size: 15px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-.row {
+.row-1 {
   display: flex;
   flex-wrap: wrap;
 }
 
-.side {
-  flex: 0 0 20%;
-  padding: 0 50px 50px 50px;
+.col-30 {
+  float: left;
+  width: 30%;
 }
 
-.main {
-  flex: 1;
-  padding: 0 50px 50px 50px;
+.col-70 {
+  float: left;
+  width: 70%;
 }
 
 .padding {
   padding: 50px;
+}
+
+.margin-top {
+  margin-top: 50px;
+}
+
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
+.h3 {
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
 }
