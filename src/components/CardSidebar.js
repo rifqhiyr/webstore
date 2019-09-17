@@ -135,6 +135,7 @@ class CardSidebar extends Component {
             <p>$14.99</p>
             <button>Buy Now</button>
           </div>
+
           <div className="card--stuff">
             <img src={require("../assets/images/afghan-flower.gif")} alt="" />
             <h4>New Look T-Shirt In Gradient Fade</h4>
