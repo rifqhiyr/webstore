@@ -79,41 +79,39 @@ class CardSidebar extends Component {
         <div className="cardlist">
           <div className="card--stuff">
             <img src={require("../assets/images/afghan-flower.gif")} />
+            <h4>New Look T-Shirt In Gradient Fade</h4>
+            <p>$14.99</p>
+            <button>Buy Now</button>
           </div>
           <div className="card--stuff">
-            <h1>
-              Ini duit
-            </h1>
+            <img src={require("../assets/images/afghan-flower.gif")} />
+            <h4>New Look T-Shirt In Gradient Fade</h4>
+            <p>$14.99</p>
+            <button>Buy Now</button>
           </div>
           <div className="card--stuff">
-            <h1>
-              Ini duit
-            </h1>
+            <img src={require("../assets/images/afghan-flower.gif")} />
+            <h4>New Look T-Shirt In Gradient Fade</h4>
+            <p>$14.99</p>
+            <button>Buy Now</button>
           </div>
           <div className="card--stuff">
-            <h1>
-              Ini duit
-            </h1>
+            <img src={require("../assets/images/afghan-flower.gif")} />
+            <h4>New Look T-Shirt In Gradient Fade</h4>
+            <p>$14.99</p>
+            <button>Buy Now</button>
           </div>
           <div className="card--stuff">
-            <h1>
-              Ini duit
-            </h1>
+            <img src={require("../assets/images/afghan-flower.gif")} />
+            <h4>New Look T-Shirt In Gradient Fade</h4>
+            <p>$14.99</p>
+            <button>Buy Now</button>
           </div>
           <div className="card--stuff">
-            <h1>
-              Ini duit
-            </h1>
-          </div>
-          <div className="card--stuff">
-            <h1>
-              Ini duit
-            </h1>
-          </div>
-          <div className="card--stuff">
-            <h1>
-              Ini duit
-            </h1>
+            <img src={require("../assets/images/afghan-flower.gif")} />
+            <h4>New Look T-Shirt In Gradient Fade</h4>
+            <p>$14.99</p>
+            <button>Buy Now</button>
           </div>
         </div>
       </div>

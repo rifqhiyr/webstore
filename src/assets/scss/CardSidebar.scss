@@ -6,14 +6,18 @@
   flex-direction: row;
   box-sizing: border-box;
   padding: 20px 30px;
-  // background-color: $color-dark-4;
+  background-color: $color-dark-4;
   .sidebar {
     width: 30%;
     box-sizing: border-box;
-    border: 2px solid $color-dark-4;
+    background-color: $color-dark-5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     .filter {
-      background-color: $color-dark-4;
+      background-color: $color-dark-5;
       padding: 10px;
+      // border: 1px solid $color-dark-3;
       border-bottom: 1px solid $color-dark-3;
       h4 {
         margin: 0 0 20px;
@@ -34,8 +38,10 @@
       padding: 10px;
       border-bottom: 1px solid $color-dark-2;
       .color--button {
+        margin: 0 0 10px;
         h5 {
           color: $color-dark-3;
+          margin: 0 0 10px;
         }
         .button__list {
           display: flex;
@@ -78,8 +84,10 @@
         }
       }
       .size--button {
+        margin: 0 0 10px;
         h5 {
           color: $color-dark-3;
+          margin: 0 0 10px;
         }
         .button__list2 {
           display: flex;
@@ -98,13 +106,17 @@
         }
       }
       .price--range {
+        margin: 0 0 10px;
         h5 {
           color: $color-dark-3;
+          margin: 0 0 10px;
         }
       }
       .brand--list {
+        margin: 0 0 10px;
         h5 {
           color: $color-dark-3;
+          margin: 0 0 10px;
         }
         .brand__list--checkbox {
 
@@ -112,23 +124,31 @@
       }
     }
     .button--filter {
+      margin: 0 0 10px;
       display: flex;
       justify-content: center;
       margin: 10px 0;
       button {
         border: none;
-        padding: 10px 25px;
         border-radius: 20px;
+        margin: 0 10px 0;
         &:hover {
           cursor: pointer;
         }
         &.button__apply {
           background-color: $color-primary;
           color: $color-dark-5;
+          padding: 10px 25px;
+          &:hover {
+            opacity: .8;
+          }
         }
         &.button__clear {
           background-color: transparent;
           color: $color-primary;
+          &:hover {
+            color: $color-dark-2;
+          }
         }
       }
     }
@@ -136,16 +156,45 @@
   .cardlist {
     width: 70%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 0 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     .card--stuff {
-      background-color: $color-dark-3;
-      margin: 5px;
+      background-color: $color-dark-5;
+      margin: 3px;
       text-align: center;
+      width: 32%;
+      padding: 8px;
+      transition: transform .5s;
+      &:hover {
+        box-shadow: 0px 0px 1px;
+        border-radius: 5px;
+        transform: scale(1.05);
+      }
       img {
         width: 80%;
+        margin: 10px 0;
+      }
+      h4 {
+        margin: 10px 0;
+      }
+      p {
+        margin: 10px 0;
+        color: $color-primary;
+        font-weight: bold;
+      }
+      button {
+        background-color: $color-primary;
+        color: $color-dark-5;
+        padding: 10px 20px;
+        margin: 10px 0 10px;
+        border-radius: 20px;
+        border: none;
+        &:hover {
+          opacity: .8;
+          cursor: pointer;
+        }
       }
     }
   }
