@@ -1,32 +1,31 @@
 import React, { Component } from "react";
+import ProductReview from "./../ProductReview";
+import FormReview from "../FormReview";
+import HotProduct from "../HotProduct";
 import Footer from "../Footer";
-
-// Import component
-import AuthHeader from "../../components/homepage/AuthHeader.js"
-import Header from "../../components/homepage/Header"
+import AuthHeader from "../../components/AuthHeader.js";
+import Header from "../../components/Header";
+import ProductDetail from "../ProductDetail";
 
 class DetailPage extends Component {
   state = {
-    backColorHeader : false,
-    backColorHeaderPage : false,
+    backColorHeader: false,
+    backColorHeaderPage: false,
     backColorFooter: false
-  }
+  };
   render() {
     return (
       <div>
-        <h1>detail page</h1>
-        <AuthHeader backColorHeader={this.state.backColorHeader}/>
-        <Header backColorHeaderPage={this.state.backColorHeaderPage}/>
+        <AuthHeader backColorHeader={this.state.backColorHeader} />
+        <Header backColorHeaderPage={this.state.backColorHeaderPage} />
+        <ProductDetail />
+        <ProductReview />
+        <FormReview />
+        <HotProduct />
         <Footer backColorFooter={this.state.backColorFooter} />
       </div>
     );
   }
 }
 
-
-export default DetailPage
-
-
-
-
-
+export default DetailPage;
