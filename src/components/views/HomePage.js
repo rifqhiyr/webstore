@@ -6,6 +6,7 @@ import AuthHeader from "../AuthHeader";
 import Header from "../Header";
 import Jumbotron from "../Jumbotron";
 import Card from "../Card";
+import HotProduct from "../HotProduct";
 import Hero from "../Hero";
 
 export default class HomePage extends Component {
@@ -21,6 +22,7 @@ export default class HomePage extends Component {
         <Header backColorHeaderPage={this.state.backColorHeaderPage} />
         <Jumbotron />
         <Card />
+        <HotProduct />
         <Hero />
         <Footer backColorFooter={this.state.backColorFooter} />
       </div>
