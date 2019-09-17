@@ -7,6 +7,7 @@ import Jumbotron from "../Jumbotron";
 import CardSidebar from "../CardSidebar";
 import Card from "../Card";
 import Hero from "../Hero";
+import FormSubcribtion from "../FormSubcribtion";
 import Footer from "../Footer";
 
 import DataHot from "./../../assets/data/HotData";
@@ -42,6 +43,7 @@ export default class HomePage extends Component {
           <div className="wrap margin-top">{dataList}</div>
         </div>
         <Hero />
+        <FormSubcribtion />
         <Footer backColorFooter={this.state.backColorFooter} />
       </div>
     );
