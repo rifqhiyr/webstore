@@ -1,22 +1,6 @@
 @import "./variables";
 
-body {
-  background-color: $color-dark-4;
-}
-
-.container {
-  padding: 0 50px 50px 50px;
-}
-
-.col-30 {
-  float: left;
-  width: 30%;
-  margin-top: 20px;
-}
-
-.col-70 {
-  float: left;
-  width: 70%;
+.margin-top-20 {
   margin-top: 20px;
 }
 
@@ -30,8 +14,8 @@ body {
   float: left;
 }
 
-button:hover {
-  background-color: $color-dark-2;
+.button:hover {
+  background-color: $color-third-1;
 }
 
 .text-area {

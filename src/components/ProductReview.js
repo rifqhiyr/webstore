@@ -4,24 +4,24 @@ import "../assets/scss/ProductReview.scss";
 export default class ProductReview extends Component {
   render() {
     return (
-      <div>
-        <h2 className="padding">Product reviews</h2>
-        <div className="row">
-          <div className="side">
+      <div className="padding">
+        <h2>Product reviews</h2>
+        <div className="row-1 margin-top">
+          <div className="col-30">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
-            <h3>Pablo Permins</h3>
-            <p className="small-font">one hour ago</p>
+            <div className="h3">Pablo Permins</div>
+            <div className="small-font">one hour ago</div>
           </div>
 
-          <div className="main">
-            <p className="medium-font">
+          <div className="col-70">
+            <div className="medium-font">
               Got this the post the other day and right from opening the packet
               I knew this was quality, put it on and I was right!! Well done
-            </p>
+            </div>
             <i class="fa fa-heart love">&nbsp;&nbsp;</i>113
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <i class="fa fa-comment">&nbsp;&nbsp;</i>6
