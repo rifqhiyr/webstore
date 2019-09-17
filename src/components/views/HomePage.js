@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Footer from "../Footer"
+import CardSidebar from "../CardSidebar";
 
 
 // Import Components {Dont forget delete in production}
@@ -25,6 +26,7 @@ export default class HomePage extends Component {
         <Jumbotron/>
         <Card/>
         <Hero/>
+        <CardSidebar />
         <Footer backColorFooter={this.state.backColorFooter} />
       </div>
     );
