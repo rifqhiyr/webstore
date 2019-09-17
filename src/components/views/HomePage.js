@@ -7,6 +7,7 @@ import Header from "../Header";
 import Jumbotron from "../Jumbotron";
 import Card from "../Card";
 import Hero from "../Hero";
+import FormSubcribtion from "../FormSubcribtion";
 
 export default class HomePage extends Component {
   state = {
@@ -22,6 +23,7 @@ export default class HomePage extends Component {
         <Jumbotron />
         <Card />
         <Hero />
+        <FormSubcribtion />
         <Footer backColorFooter={this.state.backColorFooter} />
       </div>
     );
