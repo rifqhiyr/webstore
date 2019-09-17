@@ -1,0 +1,36 @@
+@import "./variables";
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.button {
+  color: $color-dark-5;
+  background-color: $color-primary;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  float: left;
+}
+
+.button:hover {
+  background-color: $color-third-1;
+}
+
+.text-area {
+  width: 100%;
+  padding: 12px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.input[type="text"] {
+  width: 40%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}

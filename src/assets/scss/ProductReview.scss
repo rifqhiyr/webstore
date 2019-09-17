@@ -1,0 +1,55 @@
+@import "./variables";
+
+.checked {
+  color: $color-third-1;
+}
+
+.love {
+  color: $color-primary;
+}
+
+.small-font {
+  color: $color-dark-2;
+  font-size: 10px;
+}
+
+.medium-font {
+  color: $color-dark-2;
+  font-size: 15px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.row-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-30 {
+  float: left;
+  width: 30%;
+}
+
+.col-70 {
+  float: left;
+  width: 70%;
+}
+
+.padding {
+  padding: 50px;
+}
+
+.margin-top {
+  margin-top: 50px;
+}
+
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
+.h3 {
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
