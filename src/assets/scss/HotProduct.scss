@@ -12,6 +12,11 @@
   border: 1px solid $color-dark-3;
 }
 
+.content:hover {
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
 .h5 {
   text-align: center;
   margin: 20px;
