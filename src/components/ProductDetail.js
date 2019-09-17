@@ -1,67 +1,82 @@
-import React, { Component } from "react";
-import "../assets/scss/ProductDetails.scss";
-import adoration from "./../assets/images/adoration-of-the-kings-thumbnail.gif";
+import React, { Component } from "react"
+import adoration from "./../assets/images/adoration-of-the-kings-thumbnail.gif"
+import flower from "./../assets/images/afghan-flower-thumbnail.gif"
+import albania from "./../assets/images/albania-flower.gif"
+import "../assets/scss/ProductDetail.scss"
 
 export default class ProductDetail extends Component {
   render() {
     return (
-      <aside className="col-sm-7">
-        <div className="box-luar">
-          <div className="kiri">
-            <div className="image">
-              <img src={adoration} alt="test" />
+      <div className="split left">
+        <div className="image">
+          <img src={adoration} alt="images" />
+          <div className="flex-image">
+            <div>
+              <img src={flower} alt="images" />
             </div>
-          </div>
-          <div className="kanan">
-            <div className="star">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
+            <div>
+              <img src={albania} alt="images" />
             </div>
-            <div className="desc">
-              <dl className="item-property">
-                <dt>
-                  <h1>Super Oversized T-shirt with Raw Sleeves In Brown</h1>
-                </dt>
-                <dd>
-                  <p className="text-capitalize"></p>
-                </dd>
-                <dl className="currency">
-                  <dt>Rp</dt>
-                </dl>
-                <dl className="color">
-                  <dt>Color</dt>
-                  <button className="blue"></button>
-                  <button className="blue1"></button>
-                  <button className="red"></button>
-                  <button className="orange"></button>
-                  <button className="yellow"></button>
-                  <button className="green"></button>
-                  <button className="purple"></button>
-                </dl>
-                <dl className="size">
-                  <dt>Size</dt>
-                  <button className="size-s">s</button>
-                  <button className="size-m">M</button>
-                  <button className="size-l">L</button>
-                  <button className="size-xl">XL</button>
-                  <button className="size-xxl">XXL</button>
-                  <button className="size-xxxl">XXXL</button>
-                </dl>
-                <dl className="quantity">
-                  <dt>Quantity</dt>
-                  <input type="number" name="quantity" min="1" max="10" />
-                </dl>
-                <dl>
-                  <button className="color-primary">Add to cart</button>
-                </dl>
-              </dl>
+            <div>
+              <img src={flower} alt="images" />
             </div>
           </div>
         </div>
-      </aside>
-    );
+
+        <div className="split right">
+          <div className="text">
+            <p>Home</p>
+            <p className="dot">.</p>
+            <p>All Categories</p>
+            <p className="dot">.</p>
+            <p>Mens's Clothing & Accessories</p>
+          </div>
+          <div className="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <div className="title">
+            <h2>Super OverSized T-Shirt with Raw Sleeves In Brown</h2>
+          </div>
+          <div className="price">
+            <h3>Rp. 1.000.000.00,-</h3>
+          </div>
+          <div className="color">
+            <p>Color</p>
+            <div className="colors-name">
+              <button className="donker"></button>
+              <button className="blue"></button>
+              <button className="red"></button>
+              <button className="orange"></button>
+              <button className="yellow"></button>
+              <button className="green"></button>
+              <button className="purple"></button>
+            </div>
+            <div className="size">
+              <p>Size</p>
+              <div className="size-box">
+                <button className="xs">XS</button>
+                <button className="s">S</button>
+                <button className="m">M</button>
+                <button className="l">L</button>
+                <button className="xl">XL</button>
+                <button className="xxl">XXL</button>
+              </div>
+
+              <div className="quantity">
+                Quantity
+                <input type="number" name="quantity" min="1" max="10" />
+              </div>
+              <div className="submit">
+                <button className="submit-1">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
   }
 }
