@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import Footer from "../Footer";
 
 // Import Components {Dont forget delete in production}
 import AuthHeader from "../AuthHeader";
 import Header from "../Header";
 import Jumbotron from "../Jumbotron";
+import CardSidebar from "../CardSidebar";
 import Card from "../Card";
 import Hero from "../Hero";
+import Footer from "../Footer";
 
 import DataHot from "./../../assets/data/HotData";
 
@@ -35,6 +36,7 @@ export default class HomePage extends Component {
         <AuthHeader backColorFooter={this.state.backColorHeader} />
         <Header backColorHeaderPage={this.state.backColorHeaderPage} />
         <Jumbotron />
+        <CardSidebar />
         <Card />
         <div className="padding">
           <div className="wrap margin-top">{dataList}</div>
