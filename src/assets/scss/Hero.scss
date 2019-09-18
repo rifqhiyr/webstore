@@ -42,10 +42,9 @@ div.h-container {
 
   .h-link:hover {
     background-color: $color-primary;
-  }
-
-  .h-link p:hover {
-    color: $color-dark-5;
+    p {
+      color: $color-dark-5;
+    }
   }
 
   .h-link p {

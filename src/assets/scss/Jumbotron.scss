@@ -44,6 +44,11 @@ div .j-container {
     grid-column-end: 4;
   }
 
+  a {
+    text-decoration: none;
+    color: $color-dark-5;
+  }
+
   .j-grid1 li {
     list-style: none;
   }
