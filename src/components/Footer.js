@@ -30,22 +30,22 @@ class Footer extends Component {
           <ul className="footer--link__socmed">
             <li>
               <a href="www">
-                <i class="fa fab fa-instagram"></i>
+                <i className="fa fab fa-instagram"></i>
               </a>
             </li>
             <li>
               <a href="www">
-                <i class="fa fab fa-pinterest"></i>
+                <i className="fa fab fa-pinterest"></i>
               </a>
             </li>
             <li>
               <a href="www">
-                <i class="fa fab fa-twitter"></i>
+                <i className="fa fab fa-twitter"></i>
               </a>
             </li>
             <li>
               <a href="www">
-                <i class="fa fab fa-facebook"></i>
+                <i className="fa fab fa-facebook"></i>
               </a>
             </li>
           </ul>
