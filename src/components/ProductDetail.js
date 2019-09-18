@@ -7,18 +7,20 @@ import "../assets/scss/ProductDetail.scss"
 export default class ProductDetail extends Component {
   render() {
     return (
-      <div className="split left">
-        <div className="image">
-          <img src={adoration} alt="images" />
-          <div className="flex-image">
-            <div>
-              <img src={flower} alt="images" />
-            </div>
-            <div>
-              <img src={albania} alt="images" />
-            </div>
-            <div>
-              <img src={flower} alt="images" />
+      <div className="product">
+        <div className="split left">
+          <div className="image">
+            <img src={adoration} alt="images" />
+            <div className="flex-image">
+              <div>
+                <img src={flower} alt="images" />
+              </div>
+              <div>
+                <img src={albania} alt="images" />
+              </div>
+              <div>
+                <img src={flower} alt="images" />
+              </div>
             </div>
           </div>
         </div>
@@ -32,11 +34,11 @@ export default class ProductDetail extends Component {
             <p>Mens's Clothing & Accessories</p>
           </div>
           <div className="stars">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
+            <span className="fa fa-star checked"></span>
+            <span className="fa fa-star checked"></span>
+            <span className="fa fa-star checked"></span>
+            <span className="fa fa-star"></span>
+            <span className="fa fa-star"></span>
           </div>
           <div className="title">
             <h2>Super OverSized T-Shirt with Raw Sleeves In Brown</h2>
