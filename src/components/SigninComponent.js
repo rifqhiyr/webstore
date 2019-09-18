@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { login } from "../store/actions/authAction";
@@ -21,6 +21,7 @@ class SigninComponent extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    console.log(this.props.history);
 
     const formData = {
       username: this.state.username,
@@ -29,7 +30,6 @@ class SigninComponent extends Component {
 
     this.props.login(formData);
     this.props.history.push("/");
-    // console.log(this.props);
   };
 
   render() {
@@ -77,4 +77,4 @@ const mapStateToProps = state => {
 export default connect(
   mapStateToProps,
   { login }
-)(SigninComponent);
+)(withRouter(SigninComponent));
