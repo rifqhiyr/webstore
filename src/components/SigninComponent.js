@@ -10,7 +10,6 @@ class SigninComponent extends Component {
   state = {
     username: "",
     password: ""
-    // isAuth: true
   };
 
   handleChange = e => {

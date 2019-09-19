@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { register } from "../store/actions/authAction";
@@ -34,7 +34,7 @@ class SignupComponent extends Component {
     };
 
     this.props.register(formData);
-    this.props.history.push("/");
+    this.props.history.push("/login");
   };
 
   render() {
@@ -75,7 +75,7 @@ class SignupComponent extends Component {
             <button>Sign up</button>
           </form>
 
-          <p class="message">
+          <p className="message">
             Already member? <Link to="/login">Sign in</Link>
           </p>
         </div>
@@ -97,4 +97,4 @@ const mapStateToProps = state => {
 export default connect(
   mapStateToProps,
   { register }
-)(SignupComponent);
+)(withRouter(SignupComponent));

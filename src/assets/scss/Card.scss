@@ -4,8 +4,7 @@ div .c-grid {
   display: grid;
   padding: 10px;
   padding: 0px 40px 10px 30px;
-  // grid-gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   text-align: center;
   background-color: $color-dark-4;
 
@@ -13,16 +12,16 @@ div .c-grid {
     background-color: $color-dark-5;
     width: 95%;
     height: 100%;
-    padding : 10px;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    padding: 10px;
+    grid-row-start: 1;
+    grid-row-end: 2;
     border: solid 2px $color-dark-4;
     transition: all 1s;
     &:hover {
       box-shadow: 0.5px;
       border-radius: 5px;
-      outline : none;
-      border : none;
+      outline: none;
+      border: none;
       transform: scale(1.05);
     }
   }
@@ -52,8 +51,8 @@ div .c-grid {
     &:hover {
       box-shadow: 0.5px;
       border-radius: 5px;
-      outline : none;
-      border : none;
+      outline: none;
+      border: none;
       transform: scale(1.05);
     }
   }
@@ -83,8 +82,8 @@ div .c-grid {
     &:hover {
       box-shadow: 0.5px;
       border-radius: 5px;
-      outline : none;
-      border : none;
+      outline: none;
+      border: none;
       transform: scale(1.05);
     }
   }
