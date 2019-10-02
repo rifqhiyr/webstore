@@ -2,7 +2,7 @@ const initialState = {
   token: localStorage.getItem("token"),
   isAuthenticated: null,
   loading: true,
-  error: []
+  errors: []
 };
 
 export default function(state = initialState, action) {
@@ -24,6 +24,11 @@ export default function(state = initialState, action) {
         isAuthenticated: false,
         loading: false,
         errors: payload
+      };
+    case "UNAUTHENTICATED":
+      return {
+        ...state,
+        isAuthenticated: false
       };
     default:
       return state;

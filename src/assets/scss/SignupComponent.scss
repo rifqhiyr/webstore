@@ -37,6 +37,21 @@
         font-weight: bold;
       }
 
+      select {
+        font-family: "roboto", sans-serif;
+        outline: 1;
+        background: $color-dark-5;
+        border-radius: 5px;
+        width: 100%;
+        border: 1px solid $color-dark-3;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 18px;
+        padding-left: 130px;
+        color: rgb(129, 119, 119);
+      }
+
       button {
         font-family: "roboto", sans-serif;
         text-transform: uppercase;
@@ -51,16 +66,14 @@
         color: $color-dark-5;
         cursor: pointer;
       }
-
-      p.message {
-        display: flow-root;
-        a {
-          color: $color-primary;
-          text-decoration: none;
-          margin-top: 30px;
-          font-weight: 500;
-        }
-      }
     }
+  }
+}
+
+.message {
+  margin-top: 30px;
+
+  a {
+    text-decoration: none;
   }
 }

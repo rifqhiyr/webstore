@@ -1,11 +1,9 @@
 @import "./variables";
 
 .card-sidebar {
-  width: 100%;
   display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-  padding: 20px 30px;
+  justify-content: center;
+  padding: 10px 70px;
   background-color: $color-dark-4;
   .sidebar {
     width: 30%;
@@ -54,25 +52,25 @@
             border-radius: 50%;
             cursor: pointer;
             &.color1 {
-              background-color: #779CFF;
+              background-color: #779cff;
             }
             &.color2 {
-              background-color: #00DACB;
+              background-color: #00dacb;
             }
             &.color3 {
-              background-color: #FF0058;
+              background-color: #ff0058;
             }
             &.color4 {
-              background-color: #FF5000;
+              background-color: #ff5000;
             }
             &.color5 {
-              background-color: #ECFD00;
+              background-color: #ecfd00;
             }
             &.color6 {
-              background-color: #43EA00;
+              background-color: #43ea00;
             }
             &.color7 {
-              background-color: #B300FF;
+              background-color: #b300ff;
             }
             &.color8 {
               background-color: #000000;
@@ -99,7 +97,7 @@
             border: 1px solid $color-dark-3;
             padding: 5px 15px;
             &:hover {
-              background-color: #FF0058;
+              background-color: #ff0058;
               color: $color-dark-5;
             }
           }
@@ -119,7 +117,6 @@
           margin: 0 0 10px;
         }
         .brand__list--checkbox {
-
         }
       }
     }
@@ -140,7 +137,7 @@
           color: $color-dark-5;
           padding: 10px 25px;
           &:hover {
-            opacity: .8;
+            opacity: 0.8;
           }
         }
         &.button__clear {
@@ -154,27 +151,29 @@
     }
   }
   .cardlist {
-    width: 70%;
-    box-sizing: border-box;
-    padding: 0 10px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     .card--stuff {
       background-color: $color-dark-5;
-      margin: 3px;
+      width: 295px;
+      margin: 2px;
       text-align: center;
-      width: 32%;
-      padding: 8px;
-      transition: transform .5s;
+      padding: 20px;
+      transition: transform 0.5s;
+      border: 1px solid rgb(206, 206, 206);
       &:hover {
         box-shadow: 0px 0px 1px;
         border-radius: 5px;
         transform: scale(1.05);
       }
+      :link {
+        text-decoration: none;
+      }
       img {
         width: 80%;
+        height: 250px;
         margin: 10px 0;
+        border: 1px solid rgb(206, 206, 206);
       }
       h4 {
         margin: 10px 0;
@@ -192,7 +191,7 @@
         border-radius: 20px;
         border: none;
         &:hover {
-          opacity: .8;
+          opacity: 0.8;
           cursor: pointer;
         }
       }

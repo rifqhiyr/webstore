@@ -1,22 +1,24 @@
 const initialState = {
-  products: []
+  cartProducts: [],
+  allTotal: 0
 };
 
 export default function(state = initialState, action) {
   const { type, payload } = action;
 
   switch (type) {
-    case "GET_PRODUCT":
+    case "SHOW_CART":
       return {
         ...state,
         ...payload,
-        products: payload.result
+        cartProducts: payload.result.cart,
+        allTotal: payload.result.total_price
       };
-    case "CREATE_PRODUCT":
+    case "DELETE_CART":
       return {
         ...state,
         ...payload,
-        products: [...state.products, payload]
+        cartProducts: state.cartProducts.filter(cart => cart._id !== payload)
       };
     default:
       return state;

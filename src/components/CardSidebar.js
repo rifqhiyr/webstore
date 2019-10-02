@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { getProduct } from "../store/actions/listProductsAction";
@@ -8,17 +9,18 @@ import "../assets/scss/CardSidebar.scss";
 class CardSidebar extends Component {
   componentDidMount() {
     this.props.getProduct();
-  }
+  } 
 
   render() {
     const listProducts = this.props.products.map(product => {
       return (
         <div className="card--stuff" key={product._id}>
-          {/* <img src={product.pict} alt="" /> */}
-          <img src={require("../assets/images/doraemon.jpg")} alt="" />
-          <h4>{product.productName}</h4>
-          <p>Rp {product.price}</p>
-          <p>Stock: {product.stock}</p>
+          <Link to={`/detail/${product._id}`}>
+            <img src={product.pict} alt="" />
+            <h4>{product.productName}</h4>
+            <p>Rp {product.price}</p>
+            <p>Stock: {product.stock}</p>
+          </Link>
           <button>Buy Now</button>
         </div>
       );
@@ -26,7 +28,7 @@ class CardSidebar extends Component {
 
     return (
       <div className="card-sidebar">
-        <div className="sidebar">
+        {/* <div className="sidebar">
           <div className="filter">
             <h4>Filter 386 Items</h4>
             <p>
@@ -130,7 +132,7 @@ class CardSidebar extends Component {
               <i className="fa fas fa-times"></i>Clear All
             </button>
           </div>
-        </div>
+        </div> */}
         <div className="cardlist">{listProducts}</div>
       </div>
     );

@@ -1,22 +1,16 @@
 const initialState = {
-  products: []
+  productById: {}
 };
 
 export default function(state = initialState, action) {
   const { type, payload } = action;
 
   switch (type) {
-    case "GET_PRODUCT":
+    case "GET_PRODUCT_DETAIL":
       return {
         ...state,
         ...payload,
-        products: payload.result
-      };
-    case "CREATE_PRODUCT":
-      return {
-        ...state,
-        ...payload,
-        products: [...state.products, payload]
+        productById: payload.result
       };
     default:
       return state;

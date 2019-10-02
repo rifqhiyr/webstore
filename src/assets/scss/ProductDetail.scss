@@ -3,59 +3,37 @@
 }
 
 .split {
-  height: 100%;
-  width: 50%;
   position: relative;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+  height: 700px;
+  width: 50%;
+  overflow: hidden;
   display: inline-block;
 }
 
 .left {
-  left: 0;
   background-color: white;
 }
 
 .right {
-  right: 0;
+  padding: 60px;
   background-color: white;
 }
 
-// .centered {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-// }
-
 .image img {
-  height: 90%;
-  width: 90%;
-}
-
-.flex-image {
-  display: flex;
-  flex-wrap: nowrap;
-  // background: grey;
-  padding-top: 10px;
-}
-
-.flex-image > div {
-  width: 100px;
-  margin: 5px;
-  margin-left: 20px;
-  padding: 2px;
-  border: 1px solid black;
+  height: 600px;
+  width: 450px;
+  margin: 60px 0px 0px 120px;
+  border: 2px solid #8d8d91;
+  border-radius: 20px;
 }
 
 .text {
   display: flex;
-  padding-left: 25%;
 }
 
 .text p {
   color: #8d8d91;
-  padding-left: 10px;
+  margin: 10px;
 }
 
 .p {
@@ -73,25 +51,26 @@
 
 .stars {
   display: flex;
-  padding: 25px 26%;
+  margin: 25px 10px;
 }
 
 .title {
-  padding: 3px 26%;
+  margin: 0px 10px;
 }
 
 .price {
   color: #f62f5e;
-  padding: 15px 25% 15px 0;
+  margin: 25px 10px;
+  text-align: left;
 }
 
 .color {
-  padding: 3% 15% 14% 26%;
+  margin: 0px 10px;
   color: grey;
 }
 
 .colors-name {
-  padding: 4% 0;
+  margin: 25px -5px;
 }
 
 .donker {
@@ -152,11 +131,11 @@
 
 .size {
   color: grey;
-  padding: 10% 1%;
+  margin: 0px -5px;
 }
 
 .size-box {
-  padding: 5% 1% 15%;
+  margin: 25px 0px;
 }
 
 .xs {
@@ -196,7 +175,7 @@
 }
 
 .submit {
-  padding: 5px 20px;
+  margin: 50px 0px;
 }
 
 .submit-1 {

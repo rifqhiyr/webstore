@@ -1,16 +1,24 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+
+import { getProduct } from "../store/actions/listProductsAction";
+
 import "../assets/scss/HotProduct.scss";
 
-import DataHot from "./../assets/data/HotData";
+class HotProduct extends Component {
+  componentDidMount() {
+    this.props.getProduct();
+  }
 
-export default class HotProduct extends Component {
   render() {
-    const dataList = DataHot.map(data => {
+    const subset = this.props.products.slice(0, 4);
+
+    const listProducts = subset.map((product, index) => {
       return (
-        <div className="content">
-          <img src={data.img} alt="Product1" />
-          <div className="h5">{data.title}</div>
-          <div className="price">Rp {data.price} ,00</div>
+        <div className="content" key={index}>
+          <img src={product.pict} alt="Product1" />
+          <div className="h5">{product.productName}</div>
+          <div className="h5">Rp {product.price} ,00</div>
           <div className="button-wrap">
             <button className="button-hot">Buy now</button>
           </div>
@@ -20,8 +28,19 @@ export default class HotProduct extends Component {
     return (
       <div className="padding">
         <h2>You may also like</h2>
-        <div className="wrap margin-top">{dataList}</div>
+        <div className="wrap margin-top">{listProducts}</div>
       </div>
     );
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    products: state.listProductsReducer.products
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  { getProduct }
+)(HotProduct);

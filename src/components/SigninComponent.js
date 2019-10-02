@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-
+ 
 import { login } from "../store/actions/authAction";
 
 import "../assets/scss/SigninComponent.scss";
@@ -16,19 +16,25 @@ class SigninComponent extends Component {
     this.setState({
       [e.target.name]: e.target.value
     });
-  };
+  }; 
 
-  handleSubmit = e => {
+  handleSubmit = async e => {
     e.preventDefault();
-    console.log(this.props.history);
+    // console.log(this.props.history);
 
     const formData = {
       username: this.state.username,
       password: this.state.password
     };
 
-    this.props.login(formData);
-    this.props.history.push("/");
+    await this.props.login(formData);
+    if (this.props.isAuthenticated) {
+      console.log("welcome", this.props.isAuthenticated);
+      this.props.history.push("/");
+    } else {
+      console.log(this.props.isAuthenticated);
+      alert("Error username or password");
+    }
   };
 
   render() {
@@ -51,15 +57,10 @@ class SigninComponent extends Component {
               value={this.state.password}
               onChange={this.handleChange}
             />
-            <div className="check">
-              <input type="checkbox" /> Remember me
-            </div>
-
             <button>Sign In</button>
           </form>
           <p className="message">
-            <Link to="#">forgot password</Link>
-            {/* <Link to="/">Have an account</Link> */}
+            <Link to="/register">Sign Up here..</Link>
           </p>
         </div>
       </div>

@@ -17,15 +17,20 @@
   cursor: pointer;
 }
 
+.content img {
+  width: 280px;
+  height: 280px;
+  padding: 20px;
+}
+
 .h5 {
   text-align: center;
   margin: 20px;
 }
 
-.price {
-  font-size: 15px;
-  color: $color-dark-2;
-  text-align: center;
+.button-wrap {
+  display: flex;
+  justify-content: center;
 }
 
 .button-hot {
@@ -40,9 +45,4 @@
 
 .button-hot:hover {
   background-color: $color-third-1;
-}
-
-.button-wrap {
-  display: flex;
-  justify-content: center;
 }

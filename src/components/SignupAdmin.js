@@ -13,7 +13,7 @@ class SignupComponent extends Component {
     name: "",
     email: "",
     password: "",
-    role: "customer"
+    role: "merchant"
   };
 
   handleChange = e => {
@@ -42,7 +42,7 @@ class SignupComponent extends Component {
     return (
       <div className="signup-page">
         <div className="form">
-          <h1>Customer Sign Up</h1>
+          <h1>Merchant Sign Up</h1>
           <form className="signup-form" onSubmit={this.handleSubmit}>
             <input
               type="text"
@@ -72,7 +72,7 @@ class SignupComponent extends Component {
               value={this.state.password}
               onChange={this.handleChange}
             />
-            <button>Sign up</button>
+            <button>Sign up as merchant</button>
           </form>
 
           <p className="message">
@@ -80,7 +80,7 @@ class SignupComponent extends Component {
           </p>
 
           <p className="message">
-            Register as a Merchant <Link to="/register-admin"> Here</Link>
+            Register as a Customer <Link to="/register"> Here</Link>
           </p>
         </div>
       </div>

@@ -10,7 +10,7 @@ export const register = formData => async dispatch => {
     dispatch({
       type: "REGISTER_SUCCESS",
       payload: res.data
-    });
+    }); 
   } catch (error) {
     console.log("error", error.response.data);
     dispatch({
@@ -39,3 +39,10 @@ export const login = formData => async dispatch => {
     });
   }
 };
+
+export function logout() {
+  localStorage.clear();
+  return {
+    type: "UNAUTHENTICATED"
+  };
+}
